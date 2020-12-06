@@ -4,7 +4,9 @@ Starting working with Jupyter - we declared basic functionality needed to make J
 
 All magics are agnostic to kernel type  and should work on any kernel. Notice that using variables in the magic should declared in python3 context - that means that if you’re using python3 kernel all variables are available in the magic, if you’re using other kernel (PySpark,Spark) you should declare variables with the %%local magic. note that you can apply multiple magics and chain them together.
 
-### Read More with practical examples : 
+### Read more with practical examples:
+
+https://benm-23166.medium.com/jupyter-helpful-extra-magics-9545075f3138
 
 # Installation:
 
