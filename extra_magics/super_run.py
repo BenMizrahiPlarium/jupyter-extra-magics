@@ -90,8 +90,8 @@ class SuperRun(Magics):
 
     def download_from_git(self,file_name, repo_path):
         try:
-            headers = {'Authorization': 'Token 00ccf2ba4828e9754d52c1152ffccec47217f3d4'}
-            r = requests.get(f'https://raw.githubusercontent.com/Plarium-Repo{repo_path}', headers=headers)
+            headers = {'Authorization': ''}
+            r = requests.get(f'https://raw.githubusercontent.com/{repo_path}', headers=headers)
 
             if not r.ok:
                 raise FileNotFoundError(errno.ENOENT, os.strerror(errno.ENOENT), f'{repo_path}')
